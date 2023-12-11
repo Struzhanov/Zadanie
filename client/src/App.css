@@ -1,0 +1,116 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.button {
+  border-radius: 5px;
+  width: 300px;
+  height: 40px;
+  background-color: red;
+  color: white;
+  box-shadow: 15px 15px 4px rgba(0, 0, 0, 0.3);
+  font-size: x-large;
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.data-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.data-table th,
+.data-table td {
+  border-top: 1px solid grey;
+  padding: 8px;
+  text-align: center;
+}
+
+.data-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.appContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.leftTitle {
+  text-align: left;
+}
+
+.centerTitle {
+  text-align: center;
+}
+
+.rightMenu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menuIcon {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.menu.show {
+  display: block;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.menu ul li:hover {
+  background-color: #ddd;
+}

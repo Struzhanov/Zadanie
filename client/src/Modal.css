@@ -1,0 +1,163 @@
+.button1,
+.button2 {
+  border-radius: 5px;
+  border-color: black;
+  color: white;
+  font-size: x-large;
+  width: 120px;
+  height: 45px;
+  margin-top: 12px;
+  cursor: pointer;
+  margin-left: 37rem;
+  box-shadow: 15px 15px 4px rgba(0, 0, 0, 0.3);
+}
+.button1 {
+  background-color: grey;
+}
+.button2 {
+  margin-left: 10px;
+  background-color: red;
+}
+
+input {
+  border-radius: 5px;
+  height: 40px;
+  width: 90%;
+  padding-left: 10px;
+  margin-bottom: 30px;
+  font-size: x-large;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.error-message {
+  color: red;
+  margin-left: 10px;
+}
+
+::placeholder {
+  text-align: center;
+}
+
+.title,
+.price,
+.dataAndTime {
+  margin-top: 10px;
+  font-size: x-large;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal {
+  background-color: white;
+  width: 60%;
+  height: 60%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 15px 15px 4px rgba(0, 0, 0, 0.3);
+}
+.close-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-left: 40.5rem;
+  color: grey;
+}
+
+.separator1,
+.separator2 {
+  width: 100%;
+  border: none;
+  height: 1px;
+  background-color: grey;
+}
+.separator1 {
+  margin-bottom: 45px;
+}
+.separator2 {
+  margin-top: 45px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .modal {
+    width: 90%;
+    height: 90%;
+    padding: 10px;
+  }
+
+  .close-button,
+  .button1,
+  .button2,
+  h2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+
+  .button1,
+  .button2 {
+    width: auto;
+    height: auto;
+  }
+
+  .button1 {
+    background-color: grey;
+  }
+
+  .button2 {
+    background-color: red;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 70%;
+    height: 70%;
+    padding: 30px;
+  }
+
+  .close-button,
+  h2 {
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .button1,
+  .button2 {
+    margin-left: 12px;
+  }
+  .twoButton {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 12px;
+  }
+}
